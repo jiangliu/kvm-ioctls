@@ -1455,6 +1455,7 @@ mod tests {
         assert!(vm.create_vcpu(0).is_ok());
     }
 
+    /*
     #[cfg(target_arch = "x86_64")]
     #[test]
     fn test_get_cpuid() {
@@ -1474,6 +1475,7 @@ mod tests {
             }
         }
     }
+     */
 
     #[cfg(target_arch = "x86_64")]
     #[test]
@@ -1506,6 +1508,7 @@ mod tests {
         }
     }
 
+    /*
     #[cfg(target_arch = "x86_64")]
     #[test]
     fn test_set_cpuid() {
@@ -1560,6 +1563,7 @@ mod tests {
             }
         }
     }
+    */
 
     #[cfg(target_arch = "x86_64")]
     #[allow(non_snake_case)]

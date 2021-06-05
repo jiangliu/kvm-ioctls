@@ -1394,6 +1394,11 @@ impl VcpuFd {
             Ok(())
         }
     }
+
+    /// Get reference to the underlying vcpu file object and then get access to underlying RawFd.
+    pub fn vcpu_file(&self) -> &File {
+        &self.vcpu
+    }
 }
 
 /// Helper function to create a new `VcpuFd`.
